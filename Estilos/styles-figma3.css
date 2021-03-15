@@ -1,0 +1,281 @@
+
+h1{
+  font-weight: normal;
+  margin-block-start: 64px;
+  margin-block-end: 16px;
+  display: inline-block;
+  /* font-size: 10px; */
+}
+
+
+:root{
+  --white30: white;
+  --white20: #A5A3A5;
+  --white10: #3A3539;
+    font-size: 62.5%;
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  details{
+  color: var(--white10);
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+  body{
+  margin: 0px;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+ a{
+  color: var(--white20);
+  text-decoration: none;
+}
+header a:hover{
+  color:var(--gris30)header
+}
+
+.titulo {
+  font-size: 4.2rem;
+}
+
+
+details ol {
+  font-weight: initial;
+}
+
+p {
+  font-size: 1.7rem;
+  color: var(--white20);
+}
+
+h2{
+  font-size: 4rem;
+  font-weight: bold;
+  margin-block-end: 40px;
+}
+
+h3 {
+  font-size: 3.2rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+pre{
+  background-color: var(--white10);
+  padding: 40px;
+  line-height: 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  font-family: 'Nunito';
+}
+
+.hero{
+  block-size: 50px;
+  background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
+  width: 100%;
+  position: relative;
+}
+
+.margin{
+  margin: 10px;
+}
+
+.section-content{
+  counter-reset: titleList;
+}
+
+.section-content h3{
+  counter-increment: titleList;
+}
+
+h3::before{
+  content: counter(titleList) '. ';
+}
+
+h3 a {
+  text-decoration: none;
+  color: var(--gris20);
+}
+html{
+
+  background: #232946;
+  margin: 0;
+}
+summary{
+  color: #FFFFFF
+}
+blockquote{
+  background-color: #D4939D;
+  border-radius: 8px;
+  padding-inline-start: 24px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
+  padding-inline-end: 24px;
+  line-height: 32px;
+  font-size: 24px;
+}
+details li{
+  color: var(--white20);
+}
+
+.wrapper{
+  max-inline-size: 902px;
+  margin: auto;
+}
+.main-content{
+  margin-inline-end: 20px;
+  /* padding: 16px; */
+
+}
+img{
+  max-inline-size: 100%;
+  margin-block-start: 16px;
+  display: block;
+}
+hr{
+  margin-block-start: 40px;
+  margin-block-end: 40px;
+  border: 1px solid rgba(97, 97, 97, 0.2);
+}
+li{
+  font-size: 1.4rem;
+  line-height: 24px;
+}
+blockquote p{
+  font-size: 2.4rem;
+  color: #FFFFFF;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+blockquote p span::before {
+  content: '- ';
+}
+blockquote p span{
+  margin-block-start: 16px;
+  display: block;
+}
+
+.header-postion{
+
+}
+header ol li a {
+  color: #B8C1EC;
+}
+header{
+  /* margin-block-start: 100px; */
+  color: #B8C1EC;
+  margin-block-start: 20px;
+  margin-inline: 20px;
+}
+header li{
+  color: #B8C1EC;
+  margin-block-start: 16px;
+}
+.textoContenido{
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 14px;
+  border-bottom: 24px;
+}
+h4{
+  font-size: 24px;
+  font-weight: 400;
+  border-block-end: 0px;
+  /* display: inline; */
+  margin-block-start:40px;
+}
+.form input{
+  display: block;
+  inline-size: 100%;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #232946;
+  box-sizing: border-box;
+  border: 1px solid white;
+  margin-block-end: 24px;
+  padding-block: 12px;
+  padding-inline: 16px;
+  color: white;
+  font-size: 16px;
+}
+h5{
+  font-size: 24px;
+  margin-block-end: 14px;
+  font-weight: 400;
+}
+
+.form input::-webkit-input-placeholder {
+  color: var(--white20);
+}
+
+.form input[type="submit"]{
+  font-weight: bold;
+  color: #232946;
+  background-color: #EEBBC3;
+  border: none;
+}
+pre{
+  background-color: #232946;
+  overflow: auto;
+}
+.slider-conteiner{
+    /* block-size: 315px; */
+    display: block;
+    overflow: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+scroll-page .slider-content{
+    /* margin: 0; */
+    /* display: inline-block; */
+    width: 100%;
+    /* aspect-ratio: 16:9; */
+}
+.video{
+  width: 100%;
+  display: inline-block;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+.bullet-list{
+  text-align: center;
+}
+.bullet {
+  display: inline-block;
+  inline-size: 15px;
+  block-size: 15px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.slider-conteiner::-webkit-scrollbar { display: none; }
+
+.bullet:hover{
+  background-color: white;
+}
+
+
+@media screen and (min-width: 1650px){
+  .header-postion{
+    
+    position: sticky;
+    inset-block-start: -45px;
+  }
+  header{
+   margin-block-start: 100px;
+   position: absolute;
+   inline-size: 188px;
+   inset-inline-start: 160px;
+    margin-inline: 0px;
+  }
+  .hero{
+    /* margin: 0; */
+    block-size: 350px;
+  }
+  h1{
+    margin-block-start: 100px;
+    font-size: 64px;
+    font-weight: bold;
+  }
+
+}
